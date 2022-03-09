@@ -1,0 +1,181 @@
+:root {
+    --color-bg: rgb(12, 12, 12);
+    --color-primary: rgb(0, 170, 255);
+    --color-secondary: rgb(170, 170, 170);
+    --color-tertiary: rgb(200, 200, 200);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font: 0.9em/1.5em "Poppins", sans-serif;
+    background: var(--color-bg);
+    color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-tertiary);
+}
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.default-border-radius {
+    border-radius: 0.5rem;
+}
+
+header {
+    background: rgba(252, 89, 89, 0.39) url("./source/Bruce_Lee_1973.webp")
+        center/10vmax round fixed;
+    margin: 0 0 1rem 0;
+    height: 30vh;
+    text-align: center;
+    position: relative;
+}
+
+h1#ana-başlık {
+    background: black;
+    font: 2.8em/1.5em "Abril Fatface", cursive;
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0.2rem 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#içindekiler {
+    border: 0.18rem solid var(--color-primary);
+    padding: 0.8rem;
+}
+
+section#içindekiler summary,
+section#içindekiler ol {
+    font-size: medium;
+}
+
+article,
+footer {
+    border: 0.18rem solid var(--color-primary);
+    padding: 0.8rem;
+    margin: 2vh 0;
+}
+
+aside {
+    background: var(--color-bg);
+    border: 0.18rem solid var(--color-primary);
+    padding: 0.8rem;
+    margin: 2vh 0;
+}
+
+figure#kısa-bilgiler > img {
+    width: 220px;
+    height: 294px;
+    margin: auto calc(50% - 110px);
+}
+
+figure#kısa-bilgiler table {
+    margin: 5vh auto;
+    border-spacing: 0.5rem;
+}
+
+figure#kısa-bilgiler table th,
+figure#kısa-bilgiler table td {
+    font-size: 1.2em;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+
+figure#kısa-bilgiler table th {
+    text-align: left;
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+figure#kısa-bilgiler table td {
+    text-align: center;
+}
+
+figure#imza {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+ruby {
+    font-size: 2em;
+}
+
+ruby :not(rp) {
+    font-size: 1.1em;
+    color: var(--color-primary);
+}
+
+p {
+    text-indent: 2rem;
+    font: 1.05em/1.5em "Poppins", sans-serif;
+}
+
+a:link,
+a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+h2#filmografi + table {
+    border-collapse: collapse;
+}
+
+h2#filmografi + table tr th,
+h2#filmografi + table tr td {
+    font-size: 1.2em;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+h2#galeri ~ figure {
+    display: inline-block;
+    width: 33.33%;
+    border: 0.18rem solid var(--color-primary);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+h2#galeri ~ figure figcaption {
+    text-align: center;
+    font-size: larger;
+    padding: 1em;
+}
+
+h2#galeri ~ figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+blockquote {
+    font-style: oblique;
+    font-size: 1.2em;
+    border-left: 0.18rem solid var(--color-primary);
+    padding: 0.8rem;
+    margin: 4vh 1vw;
+}
